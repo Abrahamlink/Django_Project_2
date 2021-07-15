@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Categories</title>
-</head>
-<body>
-  <h1>Some text</h1>
+{% extends 'index.html' %}
+{% block content %}
+{% block title %}<title>Cats</title>{% endblock %}
+
     <ul>
         {% for i in category %}
         <li>{{ i.category_name }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+
+{% endblock %}

@@ -1,7 +1,12 @@
 {% extends 'index.html' %}
 {% block content %}
+{% block title %}<title>{{ filminfo.film_name }}</title>{% endblock %}
+
     <div class="film-list">
         {{ filminfo.film_name }}
         {{ filminfo.category }}
+<!--        <video width="800" height="600" controls>-->
+<!--            <source src="{{ filminfo.film.url }}"></video>-->
+        <iframe src="https://www.youtube.com/embed/rARN6agiW7o" frameborder="0" width="800" height="600"></iframe>
     </div>
 {% endblock %}

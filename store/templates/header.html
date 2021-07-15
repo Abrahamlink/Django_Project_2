@@ -1,0 +1,29 @@
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'categories/header.css' %}">
+
+    <div class="menu">
+
+        <div class="links">
+
+            <span class="">
+                <a href="../cats" class="link">CAT LIST</a>
+            </span>
+
+            <span>
+                <a href="../films" class="link">FILM LIST</a>
+            </span>
+
+            <span>
+                <a href="../addFilm" class="link">ADD FILM</a>
+            </span>
+
+            <span>
+                <a class="link">{{ user.username }}</a>
+            </span>
+
+        </div>
+
+    </div>
+
+{% endblock %}

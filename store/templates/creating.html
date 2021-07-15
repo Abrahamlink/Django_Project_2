@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block content %}
+{% block title %}<title>Add Film</title>{% endblock %}
+
+<form action="" method="post" class="creatingFilm">
+    {% csrf_token %}
+    <input type="text" name="film"><br>
+    <select name="genre" id="genre">
+        <option value="" selected>choose</option>
+        {% for genre in genres %}
+        <option value="{{ genre.id }}">{{ genre.category_name }}</option>
+        {% endfor %}
+    </select><br>
+    <input type="text" name="video"><br>
+    <input type="submit"><br>
+</form>
+
+{% endblock %}

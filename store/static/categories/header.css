@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background: #171f04;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.links {
+    margin-left: 85px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: Snow;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.link:hover {
+    color: black;
+    background: Snow;
+    border-radius: 1px;
+    transition: 0.5s;
+}
+
+

@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    <p><input type="text" name="username" maxlength="150" required="" id="id_username" placeholder="username..."></p>
+<!--    <span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>-->
+    
+    <p><input type="password" name="password" maxlength="128" required="" id="id_password" placeholder="password..."></p>
+    
+    <p><input type="email" name="email" maxlength="254" id="id_email" placeholder="email..."></p>
+    
+    <p><input type="submit" value="REG"></p>
+
+</form>
+{% endblock %}

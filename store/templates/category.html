@@ -1,5 +1,7 @@
 {% extends 'index.html' %}
 {% block content %}
+{% block title %}<title>Cats</title>{% endblock %}
+
     <div class="film-list">
         {% for film in films %}
             <a href="/films/{{ film.slug }}"><p>{{ film }}</p></a>

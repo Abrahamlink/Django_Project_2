@@ -1,8 +1,11 @@
 {% extends 'index.html' %}
 {% block content %}
+{% block title %}<title>Cats</title>{% endblock %}
+
     <div class="cat-list">
         {% for cat in list %}
-            <p><a href="../cats/{{ cat.slug }}">{{ cat }}</a></p>
+            <h5><a href="../cats/{{ cat.slug }}" class="catLink">{{ cat }}</a></h5>
         {% endfor %}
     </div>
+
 {% endblock %}

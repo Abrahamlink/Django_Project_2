@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block content %}
+{% block title %}<title>Films</title>{% endblock %}
+
+    {% for film in list %}
+
+        <h5><a href="{{ film.slug }}">{{ film }}</a></h5>
+
+    {% endfor %}
+
+{% endblock %}

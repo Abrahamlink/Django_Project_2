@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game list</title>
+</head>
+<body>
+
+    <h1 align="center">Game list</h1>
+
+
+    {% for game in list %}
+
+        <p>
+            <a href="{{ game.1 }}/{{ game.2 }}">{{ game.0 }}</a>
+        </p>
+
+    {% endfor %}
+
+</body>
+</html>
